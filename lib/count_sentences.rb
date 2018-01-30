@@ -22,6 +22,7 @@ class String
       if phrase.end_with(".?!")
         count += 1
       end
+    end 
       count
   end
 end
