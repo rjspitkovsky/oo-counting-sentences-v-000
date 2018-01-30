@@ -16,7 +16,6 @@ class String
 
   def count_sentences
     array = self.split(/[.?!]/)
-    binding.pry
     new_array = array.reject do |phrase|
       phrase == " "
     end
