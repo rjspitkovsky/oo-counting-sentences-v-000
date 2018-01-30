@@ -16,7 +16,12 @@ class String
 
   def count_sentences
     array = self.split(".!?")
-    array.count
+    count = array.count
 
+    array.each do |phrase|
+      if phrase.end_with(".?!")
+        count += 1
+      end
+      count
   end
 end
