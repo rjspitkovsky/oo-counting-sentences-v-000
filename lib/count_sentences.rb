@@ -19,7 +19,7 @@ class String
     count = array.count
 
     array.each do |phrase|
-      if phrase.end_with?("?")
+      if phrase.end_with?(".")
         count += 1
       end
     end
