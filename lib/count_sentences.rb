@@ -16,13 +16,14 @@ class String
 
   def count_sentences
     array = self.split(/[.?!]/)
+    binding.pry 
     count = 0
     array.each do |el|
       if el != " "
         count += 1
       end
     end
-    count 
+    count
     #array.count
 
 
