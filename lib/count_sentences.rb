@@ -17,12 +17,10 @@ class String
   def count_sentences
     array = self.split(".")
 
-    array.each do |phrase|
-      if phrase == " "
-        array.delete(phrase)
-      end
+    new_array = array.reject do |phrase|
+      phrase == " "
     end
-    array.count 
+    new_array.count 
 
 
     # array.delete_if(" ")
